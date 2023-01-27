@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(229, 227, 215) !important;
+}
+
+.card-container {
+    background-color: rgb(229, 227, 215) !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.quiz-card {
+    width: 25rem;
+}
