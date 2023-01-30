@@ -17,45 +17,66 @@
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Quizapp</span>
-        </div>
-    </nav>
-    <div class="card-container">
-        <div class="card quiz-card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Frage</h5>
-
-                <div class="card mb-3">
-                    <div class="card-body">
-                        Antwort.
-                    </div>
-                </div>
-
-                <div class="card mb-3">
-                    <div class="card-body">
-                        Antwort.
-                    </div>
-                </div>
-
-                <div class="card mb-3">
-                    <div class="card-body">
-                        Antwort.
-                    </div>
-                </div>
-
-                <div class="card mb-3">
-                    <div class="card-body">
-                        Antwort.
-                    </div>
+    <div class="card-section">
+        <div id="card-container" class="card-container padding-right">
+            <div id="end-screen-img" class=" d-none">
+                <div class="tropy-img-container">
+                    <img src="./img/tropy.png" class="logo">
                 </div>
             </div>
-            <div class="card-footer">
-                <div><b>1</b> von <b>5</b> Fragen</div>
+            <div class="card quiz-card">
+                <div class="card-navbar">
+                    <div class="logo-container"><img src="./img/logo.png" class="card-img-top logo" alt="..."></div>
+                </div>
+                <div class="card-body" id="start-screen">
+                    <div>
+                        <h2>Wilkommen beim Kneipenquizz</h2>
+                        <p>Bereit für die Challange?</p>
+                        <button class="btn btn-warning scale" id="start-quiz" onclick="init()">Quiz starten</button>
+                    </div>
 
-                <button class="btn btn-secondary">Nächste Frage</button>
+                </div>
+                <div class="card-body d-none" id="end-screen">
+                    <div>
+                        <div class="end-screen-logo-container"><img src="./img/brain result.png"
+                                class="card-img-top logo"></div>
+                        <p class="m-3">Quiz beendet</p>
+                        <div class="m-3">Dein Ergebniss:<b id="count-correct-answers"></b> von <b
+                                id="number-of-questions-end-screen"></b> Fragen richtig beantwortet</div>
+                        <button class="m-3 btn btn-warning scale" id="start-quiz" onclick="restart()">Quiz
+                            wiederholen</button>
+                    </div>
+                </div>
+                <div class="card-body d-none" id="questions-screen">
+                    <h5 class="card-title" id="question-text"></h5>
+
+                    <div class="card mb-3 quiz-answer-card">
+                        <div class="card-body" id="answer-1" onclick="checkAnswer('1')"></div>
+                    </div>
+
+                    <div class="card mb-3 quiz-answer-card">
+                        <div class="card-body" id="answer-2" onclick="checkAnswer('2')"></div>
+                    </div>
+
+                    <div class="card mb-3 quiz-answer-card">
+                        <div class="card-body" id="answer-3" onclick="checkAnswer('3')"></div>
+                    </div>
+
+                    <div class="card mb-3 quiz-answer-card">
+                        <div class="card-body" id="answer-4" onclick="checkAnswer('4')"></div>
+                    </div>
+                    <div class="card-footer">
+                        <div><b id="current-number-of-question"></b> von <b id="number-of-questions"></b> Fragen</div>
+
+                        <button class="btn btn-secondary" id="btn-next-question" disabled
+                            onclick="nextQuestion()">Nächste
+                            Frage</button>
+                    </div>
+                    <div class="progress" style="height: 1px;">
+                        <div class="progress-bar" role="progressbar" id="progress-bar" style="width: 0%;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
