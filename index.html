@@ -30,9 +30,9 @@
                 </div>
                 <div class="card-body" id="start-screen">
                     <div>
-                        <h2>Wilkommen beim Kneipenquizz</h2>
-                        <p>Bereit für die Challange?</p>
-                        <button class="btn btn-warning scale" id="start-quiz" onclick="init()">Quiz starten</button>
+                        <h2 class="font-size">Wilkommen beim Kneipenquizz</h2>
+                        <p class="font-size-small">Bereit für die Challange?</p>
+                        <button class="btn btn-warning scale font-size-small" id="start-quiz" onclick="init()">Quiz starten</button>
                     </div>
 
                 </div>
@@ -40,35 +40,35 @@
                     <div>
                         <div class="end-screen-logo-container"><img src="./img/brain result.png"
                                 class="card-img-top logo"></div>
-                        <p class="m-3">Quiz beendet</p>
-                        <div class="m-3">Dein Ergebniss:<b id="count-correct-answers"></b> von <b
+                        <p class="m-3 font-size-small">Quiz beendet</p>
+                        <div class="m-3 font-size-small">Dein Ergebniss:<b id="count-correct-answers"></b> von <b
                                 id="number-of-questions-end-screen"></b> Fragen richtig beantwortet</div>
-                        <button class="m-3 btn btn-warning scale" id="start-quiz" onclick="restart()">Quiz
+                        <button class="m-3 btn btn-warning scale font-size-small" id="start-quiz" onclick="restart()">Quiz
                             wiederholen</button>
                     </div>
                 </div>
                 <div class="card-body d-none" id="questions-screen">
-                    <h5 class="card-title" id="question-text"></h5>
+                    <h5 class="card-title font-size-small" id="question-text"></h5>
 
                     <div class="card mb-3 quiz-answer-card">
-                        <div class="card-body" id="answer-1" onclick="checkAnswer('1')"></div>
+                        <div class="card-body font-size-small" id="answer-1" onclick="checkAnswer('1')"></div>
                     </div>
 
                     <div class="card mb-3 quiz-answer-card">
-                        <div class="card-body" id="answer-2" onclick="checkAnswer('2')"></div>
+                        <div class="card-body font-size-small" id="answer-2" onclick="checkAnswer('2')"></div>
                     </div>
 
                     <div class="card mb-3 quiz-answer-card">
-                        <div class="card-body" id="answer-3" onclick="checkAnswer('3')"></div>
+                        <div class="card-body font-size-small" id="answer-3" onclick="checkAnswer('3')"></div>
                     </div>
 
                     <div class="card mb-3 quiz-answer-card">
-                        <div class="card-body" id="answer-4" onclick="checkAnswer('4')"></div>
+                        <div class="card-body font-size-small" id="answer-4" onclick="checkAnswer('4')"></div>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer font-size-small">
                         <div><b id="current-number-of-question"></b> von <b id="number-of-questions"></b> Fragen</div>
 
-                        <button class="btn btn-secondary" id="btn-next-question" disabled
+                        <button class="btn btn-secondary font-size-small" id="btn-next-question" disabled
                             onclick="nextQuestion()">Nächste
                             Frage</button>
                     </div>
