@@ -12,7 +12,7 @@ let questions = [
         'answer_1': 'Mama, fliegen wir zusammen in den Urlaub?',
         'answer_2': 'Mama, spielen wir Monopoly?',
         'answer_3': 'Mama, fährst du mich in die Stadt?',
-        'answer_4': 'Mama, xxx',
+        'answer_4': 'Mama, backen wir einen kuchen?',
         'right_answer': 3
     },
     {
@@ -26,7 +26,7 @@ let questions = [
     {
         'question': 'Außer auf Speisekarten, wo findet man noch ein Hamburger-Menü?',
         'answer_1': 'Wanderkarten',
-        'answer_2': 'Etiketten auf Kleidungsstücken',
+        'answer_2': 'Möbelhäuser',
         'answer_3': 'Netzteilen',
         'answer_4': 'Mobile-Websiten',
         'right_answer': 4
@@ -40,19 +40,19 @@ let questions = [
         'right_answer': 1
     },
     {
-        'question': 'Wer hat HTML erfunden?',
-        'answer_1': 'Robbie Wiliams',
-        'answer_2': 'Lady Gaga',
-        'answer_3': 'Tim Berners-Lee',
-        'answer_4': 'Justin Biber',
+        'question': 'Welches der folgenden gilt laut der DGE nicht als Getränk',
+        'answer_1': 'Bier',
+        'answer_2': 'Tomatensaft',
+        'answer_3': 'Milch',
+        'answer_4': 'Coca-Cola',
         'right_answer': 3
     },
     {
-        'question': 'Wer hat HTML erfunden?',
-        'answer_1': 'Robbie Wiliams',
-        'answer_2': 'Lady Gaga',
-        'answer_3': 'Tim Berners-Lee',
-        'answer_4': 'Justin Biber',
+        'question': 'Einer der engen Verwandten des berühmten Aztekenherrschers "Montezuma" hieß?',
+        'answer_1': 'Kleiner Haufen Sch****',
+        'answer_2': 'Loch am Ar***',
+        'answer_3': 'Sohn einer Prostituierten',
+        'answer_4': 'Schlammkriecher',
         'right_answer': 3
     }
 ]
